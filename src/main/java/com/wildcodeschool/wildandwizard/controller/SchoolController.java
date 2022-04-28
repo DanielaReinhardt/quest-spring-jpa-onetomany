@@ -74,7 +74,7 @@ public class SchoolController {
             if (optionalSchool.isPresent()) {
                 School school = optionalSchool.get();
 
-                // call the method setSchool in Wizard
+                // this calls the method setSchool in Wizard
                 Method method = getMethod(wizard, "setSchool",
                         new Class[]{School.class});
                 if (method != null) {
